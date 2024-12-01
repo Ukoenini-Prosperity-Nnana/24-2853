@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Favorite Color</title>
+    </head>
+    <body>
+        <h1>What is your favorite color?</h1>
+        <input id="color" type="text">
+        <button onclick="checkColor()">Submit</button>
+        <p id="result"></p>
+
+        <script>
+             function checkColor(){
+                var color =
+                 document.getElementById('color').value.trim().toLowerCase();
+                switch(color) {
+                    case 'red':
+                        document.getElementById('result').innerHTML='Red is a bold and vibrant color!';
+                        break;
+                        case 'blue':
+                            document.getElementById('result').innerHTML='Blue is a calming and soothing color!';
+                            break;
+                            case 'green':
+                                document.getElementById('result').innerHTML='Green is a fresh and natural color!';
+                                break;
+                                default:
+                                    document.getElementById('result').innerHTML='That is a unique favorite color!';
+                                    break;
+                                    case 'yellow':
+                                        document.getElementById('result').innerHTML='Yellow is a vibrant and energetic color!';
+                                        break;
+                                        case 'purple':
+                                            document.getElementById('result').innerHTML='Purple is a rich and captivating color!';
+                                            break;
+                                            case 'pink':
+                                                document.getElementById('result').innerHTML='Pink is a bright and cheerful color!';
+                                                break;
+                                                case 'black':
+                                                    document.getElementById('result').innerHTML='Black is a dark and powerful color!';
+                }
+                
+            }
+        </script>
+    </body>
+</html>
